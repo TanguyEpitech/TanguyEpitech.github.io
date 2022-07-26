@@ -58,8 +58,8 @@ class connect4 {
         // r = row
         var z = 1;
         contener.css("display", "grid");
-        contener.css('grid-template-columns', 'repeat(' + col + ',150px)');
-        contener.css('width', col * 150 + "px");
+        contener.css('grid-template-columns', 'repeat(' + col + ',13vw)');
+        contener.css('width', 100 + "vw");
         var col_div;
 
         for (c; c <= col; c++) {
