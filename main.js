@@ -58,8 +58,7 @@ class connect4 {
         // r = row
         var z = 1;
         contener.css("display", "grid");
-        contener.css('grid-template-columns', 'repeat(' + col + ',13vw)');
-        contener.css('width', 100 + "vw");
+        contener.css('grid-template-columns', 'repeat(' + col + ', 64px)');
         var col_div;
 
         for (c; c <= col; c++) {
@@ -174,13 +173,17 @@ class connect4 {
 
             if (this.compt == 1) {
                 var color = "yellow";
-                var audio = new Audio('SWSH_Whoosh 6 (ID 1799)_LS.wav');
-                audio.play();
+                
+
+                var joueur0 =  document.querySelector("#joueur")
+                joueur0.innerHTML = "Joueur 2 ";
                 this.compt = 0;
             } else {
                 var color = "blue";
-                var audio = new Audio('SWSH_Whoosh 6 (ID 1799)_LS.wav');
-                audio.play();
+                var joueur1 =  document.querySelector("#joueur")
+
+           joueur1.innerHTML = "Joueur 1 ";
+
                 this.compt = 1;
             }
             for (let f = 0; f <= this.map.length; f++) {

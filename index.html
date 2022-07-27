@@ -1,6 +1,8 @@
 <html lang="en">
 
 <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -31,7 +33,6 @@
         }
         
         body {
-            margin: 0;
             text-align: center;
             font-family: 'Space Mono', monospace;
         }
@@ -57,15 +58,15 @@
         }
         
         #map {
+            margin: auto;
+    max-width: 442px;
+            height: 300px;
             z-index: 777;
-    position: relative;
-    box-shadow: 1px 1px 15px rgb(180 27 27);
-    text-align: center;
-    margin: auto;
-    background: red;
-    height: 51%;
-    margin: auto;
-    max-width: 92%;
+            position: relative;
+            box-shadow: 1px 1px 15px rgb(180, 27, 27);
+            text-align: center;
+            margin: auto;
+            background: none !important;
         }
         
         .blue {
@@ -96,7 +97,7 @@
             border: 2px solid #f5da16 !important;
             box-shadow: inset 2px 0px 0px 1px #2e2d34cc !important;
             background-color: rgb(245 238 14) !important;
-            animation-name: fall2;
+            animation-name: fall2;  
             animation-duration: 0.2s;
             animation-iteration-count: 1;
         }
@@ -116,8 +117,8 @@
         
         .round {
             border: 2px solid red;
-            height: 6vh;
-            width: 6vw;
+            height: 27px;
+            width: 27px;
             margin: 15px;
             box-shadow: 1px 1px 1px 3px #00000030;
             border-radius: 100%;
@@ -217,7 +218,7 @@
             </div>
         </div>
 
-
+<div id="joueur" style="color: white;" class="joueur"> </div>
         <div id="map" style="display: none !important;">
 
 
@@ -230,25 +231,7 @@
     <script src="main.js">
     </script>
 
-    <div style="    top: 0;
-    position: absolute;
-    z-index: 12;
-    width: 100%;
-    height: 100%;
-    background: blue;
-    display: none;
-">
 
-
-
-        <video src="firework1.mp4" autoplay muted loop type="video/mp4" style="position: relative; z-index: -1;
-object-fit: cover;
-width: 100%;
-height: 100%;">
-
-    </video>
-
-    </div>
     <script type="text/javascript">
         let btn = $("button");
 
